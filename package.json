@@ -1,4 +1,5 @@
 {
+  "homepage": "https://rake3344.github.io/Rick_And_Morty",
   "name": "rick_and_morty",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,8 @@
     "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
     "redux": "^4.2.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.2",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
@@ -19,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -38,5 +43,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh": "^2.8.9",
+    "gh-pages": "^5.0.0",
+    "pages": "^0.0.16"
   }
 }

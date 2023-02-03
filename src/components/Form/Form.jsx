@@ -42,7 +42,7 @@ export default function Form(props) {
 
                 <div className={s.userBox}>
                     <label className={s.userLabel}>Password</label>
-                    <input name='password' type="text" value={userData.password} onChange={handleInputChange} className={s.userInput}/>
+                    <input name='password' type="password" value={userData.password} onChange={handleInputChange} className={s.userInput}/>
                     <p style={{color:"red"}}>{errors.password}</p>
                 </div>
 
